@@ -1,4 +1,9 @@
 # discount-campaign for retail store.
+Below use cases are handled,
+Adding or Removing discounts without making any changes in existing code.
+Decide variouse strategies while applying discounts.
+Congigure product type for which discount is not applicable.
+No code change required if new product type added to discount or existing is removed from availing discount.
 
 # Prerequisites
 Java 7 and aboev versions required to run programe.
