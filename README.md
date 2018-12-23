@@ -20,7 +20,7 @@ To get a development env running
 Refer uml-diagrame.jpg file
 
 ## Executing Test Cases
-- To run the predefined execute jar file retail-store.jar using {java -jar retail-store.jar}
+- Simplest way to run test cases is to download and run executable jar file retail-store.jar using command {java -jar retail-store.jar}
 - To run test cases in developemet environment execute main method inside /src/testcases/TestRunner.java
 - Test data is hard coded inside /src/testcases/DiscountTestCases.java test case provided.
 
