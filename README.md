@@ -7,18 +7,19 @@ Handles bussiness use cases like,
 
 #### Read through the java doc and code comments to understand the design.
 
-# Prerequisites
+## Prerequisites
 Java 8 version required to run program.
 Test cases are compatible with Junit4.
 
-# Installing
+## Installing
 To get a development env running
-Clone and Import java project into eclipse version oxygen and above.
+- Clone and Import java project into eclipse version oxygen and above.
+- OR alternatively you can execute {java -jar retail-store.jar} to see test report
 
-# UML Class Diagram
+## UML Class Diagram
 Refer uml-diagrame.jpg file
 
-# Executing Test Cases
+## Executing Test Cases
 - To run the predefined execute jar file retail-store.jar using {java -jar retail-store.jar}
 - To run test cases in developemet environment execute main method inside /src/testcases/TestRunner.java
 - Test data is hard coded inside /src/testcases/DiscountTestCases.java test case provided.
