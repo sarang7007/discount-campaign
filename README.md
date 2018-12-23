@@ -8,16 +8,16 @@ Handles bussiness use cases like,
 #### Read through the java doc and code comments to understand the design.
 
 ## Prerequisites
-Java 8 version required to run program.
-Test cases are compatible with Junit4.
+- Java 8 version required to run program.
+- Test cases are compatible with Junit4.
 
 ## Installing
-To get a development env running
+To get a development environment running,
 - Clone and Import java project into eclipse version oxygen and above.
 - OR alternatively you can execute {java -jar retail-store.jar} to see test report
 
 ## UML Class Diagram
-Refer uml-diagrame.jpg file
+- Refer uml-diagrame.jpg file explaining UML diagram for important classes.
 
 ## Executing Test Cases
 - Simplest way to run test cases is to download and run executable jar file retail-store.jar using command {java -jar retail-store.jar}
