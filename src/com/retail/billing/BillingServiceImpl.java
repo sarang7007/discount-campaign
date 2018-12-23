@@ -6,6 +6,9 @@ import com.retail.discount.DiscountService;
 import com.retail.product.Product;
 import com.retail.user.User;
 
+/**
+ * @author Sarang A. {@code BillingService} Implementation
+ */
 public class BillingServiceImpl implements BillingService {
 
 	private DiscountService discountService;

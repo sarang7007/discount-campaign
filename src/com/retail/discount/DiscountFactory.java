@@ -10,7 +10,8 @@ import java.util.Properties;
 import com.retail.discount.policy.Policy;
 
 /**
- * @author Sarang Factory class to manage all ongoing discounts
+ * @author Sarang A. Factory class to create and return object of all discount
+ *         implemetation classes
  */
 public class DiscountFactory {
 
@@ -22,6 +23,8 @@ public class DiscountFactory {
 	private List<String> discountNotAvailableForType = null;
 
 	private static final String PATH = "com.retail.discount.policy.";
+
+	private List<Policy> policies;
 
 	/**
 	 * Singleton object of factory will get created and read configuration file
@@ -69,25 +72,30 @@ public class DiscountFactory {
 
 	public List<Policy> getConfiguredDiscountPolicies() {
 
-		List<Policy> policies = new ArrayList<>();
+		// If policy objects already created do not create them again.
+		if (policies == null) {
 
-		for (String discount : configuredDiscounts) {
+			policies = new ArrayList<>();
 
-			String policyFqcn = PATH + discount;
+			for (String discount : configuredDiscounts) {
 
-			Policy policy = null;
+				String policyFqcn = PATH + discount;
 
-			try {
-				policy = (Policy) Class.forName(policyFqcn).newInstance();
+				Policy policy = null;
+
+				try {
+					policy = (Policy) Class.forName(policyFqcn).newInstance();
+				}
+				catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+
+					e.printStackTrace();
+				}
+
+				policies.add(policy);
+
 			}
-			catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
-
-				e.printStackTrace();
-			}
-
-			policies.add(policy);
-
 		}
+
 		return policies;
 	}
 }

@@ -2,6 +2,10 @@ package com.retail.discount.policy;
 
 import java.util.Date;
 
+/**
+ * @author Sarang A. Implemetation of {@link Policy} for previousely enrolled
+ *         entity
+ */
 public class OldEnrollmentPolicy extends Policy {
 
 	@Override

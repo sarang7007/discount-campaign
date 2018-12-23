@@ -1,5 +1,8 @@
 package com.retail.discount.policy;
 
+/**
+ * @author Sarang A. Implemetation of {@link Policy} for Affiliated entity
+ */
 public class AffiliateUserPolicy extends Policy {
 
 	@Override

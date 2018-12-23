@@ -1,5 +1,9 @@
 package com.retail.discount.policy;
 
+/**
+ * @author Sarang A. Implemetation of {@link Policy} for discount for high
+ *         spending entity
+ */
 public class HighSpendDiscountPolicy extends Policy {
 
 	@Override
@@ -11,7 +15,13 @@ public class HighSpendDiscountPolicy extends Policy {
 			if (policyData != null && policyData.getTotalBill() != null && policyData.getTotalBill() >= 100) {
 
 				// For each 100$ spent 5% discount will get added
-				discount = (policyData.getTotalBill() / 100) * 5;
+				discount = Math.floor(policyData.getTotalBill() / 100) * 5;
+			}
+
+			/* If discount is more than 100 then return 100 */
+			if (discount > 100d) {
+
+				discount = 100d;
 			}
 		}
 		catch (IllegalArgumentException | NullPointerException e) {
