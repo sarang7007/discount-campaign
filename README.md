@@ -5,8 +5,11 @@ Handles bussiness use cases like,
 - Configure product type for which discount is not applicable.
 - No code change required if new product type added to discount or existing is removed from availing discount.
 
+## Go through the code comments to understand the design and design phylosophy
+
 # Prerequisites
-Java 7 and aboev versions required to run program.
+Java 8 version required to run program.
+Test cases are compatible with Junit4.
 
 # Installing
 To get a development env running
@@ -16,9 +19,7 @@ Clone and Import java project into eclipse version oxygen and above.
 Refer uml-diagrame.jpg file
 
 # Executing Test Cases
-- Test data is not provided.
-- See Test.java and edit as per your test data and run java program.
-
-
-
+- To run the predefined execute jar file retail-store.jar using {java -jar retail-store.jar}
+- To run test cases in developemet environment execute main method inside /src/testcases/TestRunner.java
+- Test data is hard coded inside /src/testcases/DiscountTestCases.java test case provided.
 
