@@ -5,7 +5,7 @@ Handles bussiness use cases like,
 - Configure product type for which discount is not applicable.
 - No code change required if new product type added to discount or existing is removed from availing discount.
 
-## Go through the code comments to understand the design and design phylosophy
+#### Read through the java doc and code comments to understand the design.
 
 # Prerequisites
 Java 8 version required to run program.
